@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GWLShoppCartViewController">
+            <connections>
+                <outlet property="bottomView_b" destination="rpn-6z-cWV" id="gZV-th-t9t"/>
+                <outlet property="tableView" destination="MKm-nc-GXv" id="5qP-wc-lBG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yueshu" destination="F5J-H6-CtT" id="ERL-yj-3sA"/>
+                <outlet property="yueshu2" destination="27Q-Da-BbS" id="dmj-xZ-ZKP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MKm-nc-GXv">
+                    <rect key="frame" x="0.0" y="20" width="375" height="592"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpn-6z-cWV">
+                    <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                    <color key="backgroundColor" red="1" green="0.72859721239999997" blue="0.27155115190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="dbv-MC-N0F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rpn-6z-cWV" firstAttribute="top" secondItem="MKm-nc-GXv" secondAttribute="bottom" id="27Q-Da-BbS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rpn-6z-cWV" secondAttribute="trailing" id="8mm-QQ-MKc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="rpn-6z-cWV" secondAttribute="bottom" id="F5J-H6-CtT"/>
+                <constraint firstItem="MKm-nc-GXv" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="N5D-Q0-VKX"/>
+                <constraint firstItem="MKm-nc-GXv" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="OLw-9d-05F"/>
+                <constraint firstItem="rpn-6z-cWV" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="mCx-Wm-zJG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="MKm-nc-GXv" secondAttribute="trailing" id="zPp-5c-fDA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="50.399999999999999" y="59.820089955022496"/>
+        </view>
+    </objects>
+</document>

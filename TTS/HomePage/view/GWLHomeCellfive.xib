@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="260" id="KGk-i7-Jjw" customClass="GWLHomeCellfive">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="304" height="259.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lianzu" translatesAutoresizingMaskIntoConstraints="NO" id="wK1-HX-o68">
+                        <rect key="frame" x="0.0" y="59.5" width="304" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="ajw-gf-maI"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJN-sH-eon">
+                        <rect key="frame" x="0.0" y="0.0" width="304" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdf-v9-qxH">
+                                <rect key="frame" x="0.0" y="4" width="304" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="nSz-g9-b29"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-Nk-200">
+                                <rect key="frame" x="10" y="29" width="284" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="E6d-aC-ude"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDB-10-zE0">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="59.5"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gdf-v9-qxH" firstAttribute="leading" secondItem="JJN-sH-eon" secondAttribute="leading" id="4cy-xE-88f"/>
+                            <constraint firstItem="QDB-10-zE0" firstAttribute="top" secondItem="JJN-sH-eon" secondAttribute="top" id="6zP-zt-hrY"/>
+                            <constraint firstAttribute="trailing" secondItem="QDB-10-zE0" secondAttribute="trailing" id="Djl-zw-V5g"/>
+                            <constraint firstAttribute="trailing" secondItem="Gdf-v9-qxH" secondAttribute="trailing" id="ECQ-cF-xSI"/>
+                            <constraint firstAttribute="bottom" secondItem="QDB-10-zE0" secondAttribute="bottom" id="EgK-pl-K4X"/>
+                            <constraint firstItem="jn6-Nk-200" firstAttribute="top" secondItem="Gdf-v9-qxH" secondAttribute="bottom" id="I9k-NF-WwE"/>
+                            <constraint firstItem="QDB-10-zE0" firstAttribute="leading" secondItem="JJN-sH-eon" secondAttribute="leading" id="Suv-bV-oYh"/>
+                            <constraint firstItem="jn6-Nk-200" firstAttribute="leading" secondItem="JJN-sH-eon" secondAttribute="leading" constant="10" id="cxk-qH-2Ig"/>
+                            <constraint firstAttribute="trailing" secondItem="jn6-Nk-200" secondAttribute="trailing" constant="10" id="l7f-jJ-WhD"/>
+                            <constraint firstItem="Gdf-v9-qxH" firstAttribute="top" secondItem="JJN-sH-eon" secondAttribute="top" constant="4" id="mjY-cy-Xc0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wK1-HX-o68" secondAttribute="bottom" id="4wR-cz-YbQ"/>
+                    <constraint firstItem="wK1-HX-o68" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="A3Q-fz-22R"/>
+                    <constraint firstAttribute="trailing" secondItem="JJN-sH-eon" secondAttribute="trailing" id="Xwe-aH-nn7"/>
+                    <constraint firstAttribute="trailing" secondItem="wK1-HX-o68" secondAttribute="trailing" id="kHh-8Y-doZ"/>
+                    <constraint firstItem="JJN-sH-eon" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="l6G-KL-ge4"/>
+                    <constraint firstItem="JJN-sH-eon" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="u5w-iw-B9R"/>
+                    <constraint firstItem="wK1-HX-o68" firstAttribute="top" secondItem="JJN-sH-eon" secondAttribute="bottom" id="yrl-8O-bkf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="imageview" destination="wK1-HX-o68" id="Cba-3m-kEw"/>
+                <outlet property="label1" destination="Gdf-v9-qxH" id="Dir-5O-uwQ"/>
+                <outlet property="label2" destination="jn6-Nk-200" id="a7v-xN-yEj"/>
+                <outlet property="viewd" destination="JJN-sH-eon" id="yu0-nD-pSA"/>
+            </connections>
+            <point key="canvasLocation" x="25.600000000000001" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lianzu" width="430" height="235"/>
+    </resources>
+</document>

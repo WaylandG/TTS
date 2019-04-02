@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GWLUserDataViewController">
+            <connections>
+                <outlet property="TCDLButton" destination="Eer-df-Oe7" id="Kww-ny-k7p"/>
+                <outlet property="tableView" destination="kGA-ih-dEu" id="J1L-aJ-cEs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kGA-ih-dEu">
+                    <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eer-df-Oe7">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <color key="backgroundColor" red="0.89350014929999999" green="0.22230941060000001" blue="0.052597180010000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="Go6-4Y-KAe"/>
+                    </constraints>
+                    <state key="normal" title="确认保存信息">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="TCDLbuttonEvent:" destination="-1" eventType="touchUpInside" id="1Nu-Jl-p9Q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kGA-ih-dEu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="7ys-xL-oJw"/>
+                <constraint firstItem="kGA-ih-dEu" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="iMh-Ro-Khc"/>
+                <constraint firstItem="kGA-ih-dEu" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="iuE-Hc-lLL"/>
+                <constraint firstItem="Eer-df-Oe7" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="u5k-7P-1cs"/>
+                <constraint firstItem="Eer-df-Oe7" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="uRA-4P-b6P"/>
+                <constraint firstItem="Eer-df-Oe7" firstAttribute="top" secondItem="kGA-ih-dEu" secondAttribute="bottom" id="wGP-04-0Rk"/>
+                <constraint firstItem="Eer-df-Oe7" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="yF5-eh-Go3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="130.40000000000001" y="153.37331334332833"/>
+        </view>
+    </objects>
+</document>
